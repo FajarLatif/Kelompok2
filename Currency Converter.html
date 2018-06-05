@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Lampuang Hotels</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+		<link rel="shoutcut icon" type="image/x-icon" href="images/icon2.png">
+		<link rel="stylesheet" type="text/css" href="css/kalkulator.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+		
+<!-- end-->
+	</head>
+	<body>
+		<!-- Body di sini -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-king"></span>  Lampuang Hotels</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Gallery.html" style="text-align: left;" >Gallery<p style="height: 0px; margin: 0 0 0px; text-align: left; font-size: 9px;">Hotel photos</p></a>
+		</li>
+        <li><a href="News.html" style="text-align: left;">News<p style="height: 0px; margin: 0 0 0px; padding-top: 0px; text-align: left; font-size: 9px;">News & Events</p></a>
+		</li>
+       <li><a href="Contact.html" style="text-align: left;" >Contact<p style="height: 0px; margin: 0 0 0px; text-align: left; font-size: 9px;">Get in touch with us</p></a>
+		</li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Isi  -->
+
+<div>
+<section style="margin-top: 70px;" id="about">
+        <div class="container">
+            <center>
+                <h3>
+                    Currency Convert
+                </h3>
+            </center>
+            <select style="height: 31px;" class="form-control" id="from" onchange="convertCurrency();">
+                    <option value="USD" selected>AMERICAN DOLLAR (USD)</option>
+                    <option value="GBP">BRITISH POUND(GBP)  </optio>
+                    <option value="JPY">JEPANG YEN (JPY)</option>
+                    <option value="AUD">AUSTRALIAN DOLLAR (AUD)</option>
+                    <option value="IDR">INDONESIA RUPIAH (IDR)</option>
+                  </select>
+            <br>
+            <input type="text" id="fromAmount"  onkeyup="convertCurrency();" class="form-control">
+            <br>
+            <select style="height: 31px;" class="form-control" id="to" onchange="convertCurrency();">
+                    <option value="GBP">BRITISH POUND (GBP)</option>
+                    <option value="JPY">JEPANG YEN (JPY)</optio>
+                    <option value="AUD">AUSTRALIAN DOLLAT (AUD)</option>
+                    <option value="USD">AMERICAN DOLLAR (USD)</option>
+                    <option value="IDR">INDONESIA RUPIAH (IDR)</option>
+             </select>
+            <br>
+
+            <input style="color: red;" type="text" id="toAmount" class="form-control " disabled>
+            <br>
+            <p style="padding-top: 20px; " align="center" ><a style="border-radius: 10px; background-color: #333;" class="btn btn-primary btn-lg" href="Room.html" role="button">Back To The room </a></p>
+        </div>
+
+    </section>
+</div>
+
+
+	
+
+
+
+<!-- footer -->
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		<script type="js/internetex.js"></script>
+		<script type="plugins/jquery.js"></script>
+		<script type="plugins/jquery.flexslider-min.js"></script>
+		<script type="plugins/jquery.flexslider.js"></script>
+    <script src="http://openexchangerates.github.io/money.js/money.js"></script>
+    <script src="accounting.js"></script>
+    <script src="app.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(window).load(function()	{
+				$('.flexslider').flexslider({
+					animation: "fade",
+					easing "swing",
+					controlnav:false,
+					controlscontainer:".flex-container",
+					start: function(slider){$('.current-slide').text(slider.currentslide);
+					},
+					after: function(slider){
+						$('.current-slide').text(slider.currentslide)
+					}
+				});
+			});
+		</script>
+        <script>
+        function convertCurrency() {
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            var xmlhttp = new XMLHttpRequest();
+            var url = "http://data.fixer.io/api/latest?access_key=df8c15494151a866f35cb2b848eb192d&symbols=" + from + "," + to;
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var result = xmlhttp.responseText;
+                    var jsResult = JSON.parse(result);
+                    var oneUnit = jsResult.rates[to] / jsResult.rates[from];
+                    var amt = document.getElementById("fromAmount").value;
+                    document.getElementById("toAmount").value = (oneUnit * amt).toFixed(2);
+                }
+            }
+        }
+    </script>
+	</body>
+</html>
