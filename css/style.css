@@ -1,0 +1,382 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+
+a:focus{
+  color: #fff;
+  },
+a:hover {
+  color: #000;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 0px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html
+/*body page*/
+
+body {
+    height: auto;
+    width: auto;
+  background-color: #333;
+}
+body {
+
+    color: #5a5a5a;
+}
+
+/*body font*/
+body {
+  color: #fff;
+  text-align: auto;
+  
+}
+div {
+    display: block;
+}
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #5a5a5aad;
+  border-radius: 7px;
+  width: 100%;
+  height: 52px;
+  background-size: 100%;
+}
+
+
+/* Padding for spacing */
+.inner {
+  padding: 0px;
+}
+
+
+/*
+ * Header
+ */
+
+ .header-wrap{
+  padding-top: 40px;
+ }
+}
+
+ .carousel-inner {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-bottom: auto; 
+    overflow: hidden;
+}
+#myCarousel{
+  padding-bottom: 9px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-form{
+  position: right;
+}
+
+.dropdown-menu{
+  border-radius: 8px;
+  background-color: #5a5a5aad;
+  border-color: white;
+  color: #f3ecec;
+  text-decoration: none;
+  background-color: #e6e5e5;
+  min-width: 128px;
+}
+.underheader-line {
+    border-top: 1px dotted #bbb;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.navbar-nav{
+  padding-top: 0%;
+  margin-left: 45%;
+  margin-right: 0%;
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.header-text{
+  font-size: 26px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  padding-bottom: 0px;
+  float: left;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 100%;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 0px; 
+  font-size: 8px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 0px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a{
+color:#fff;
+  },
+.masthead-nav > .active > a:hover{
+color:#000;
+  },
+.masthead-nav > .active > a:focus {
+  color: #000;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+.testi1{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    margin-left: 50px;
+    padding-right: 30%
+    padding-left: 30%;
+    margin-right: 50%;
+}
+.bingkai{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    padding: 90px;
+    padding-top: 30px;
+    padding-right: 90px;
+    padding-bottom: 30px;
+    padding-left: 90px;
+    background-image: url(../images/back3.jpg);
+    border: 1px solid #ccc;
+}
+#rest {
+margin-right: auto;
+margin-left: auto;
+margin-top: 0px;
+padding-top: 0px;
+}
+#atas{
+  width:100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; 
+  background-image: url(../images/back3.jpg);
+  background-repeat: no-repeat; 
+  border-radius: 6px; border-color: #333 solid 1px;"
+}
+#makan{
+  margin: 20px;
+  border: 1px solid #fff;
+
+}
+#tengah{
+  color: #333;
+  width:100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center; 
+  background-repeat: no-repeat; 
+  border-radius: 6px; border-color: #333 solid 1px;"
+}
+
+
+#isi11{
+    float: left;
+    width: auto;
+    height: 70%;
+    font-size: 0.95em;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#isi1{
+    width: auto;
+    font-size: 0.95em;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#isi2{
+
+    float: left;
+    width: 242px;
+    font-size: 0.95em;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+
+.blog-post-wrap {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #e0e0e0;
+}
+
+.header-text span {
+    border-right: 1px dotted #888;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-right-color: #fff;
+}
+.main-title-wrap{
+  padding-top: 20px;
+}
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0px;
+}
+.cover .btn-lg {
+  padding: 300px;
+  font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  position: bottom;
+
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    top: 0;
+  }
+  .mastfoot {
+    position: bottom;
+    text-align: center;
+    height: auto;
+    float: bottom;
+    padding-top: 100px;
+    padding-bottom: 0%;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+    padding-bottom: 0px;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: auto;
+  }
+}
+@font-face{ 
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+       url('WebFont.woff') format('woff'),
+       url('WebFont.ttf') format('truetype'),
+       url('WebFont.svg#webfont') format('svg');
+}
+@media (min-width: 700px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: auto;
+    position: bottom;
+  }
+}
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(http://fonts.gstatic.com/s/varelaround/v9/APH4jr0uSos5wiut5cpjrkByb1TKJa77egybnpn19yM.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(http://fonts.gstatic.com/s/varelaround/v9/APH4jr0uSos5wiut5cpjrv8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(http://fonts.gstatic.com/s/varelaround/v9/APH4jr0uSos5wiut5cpjrj0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(http://fonts.gstatic.com/s/varelaround/v9/APH4jr0uSos5wiut5cpjrugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
